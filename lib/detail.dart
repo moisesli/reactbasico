@@ -24,52 +24,47 @@ class _DetailState extends State<Detail> {
 
             // Vinculos verde
             if (element.classes.contains('link')) {
-              return {'color': '#42b983', 'font-weight': 'bold'};
+              return {'color': '#7ccedf', 'font-weight': 'bold'};
             }
-
-            // Azul codigo
-            if (element.classes.contains('tag') || element.classes.contains('name')) {
-              return {'color': '#418fd8'};
-            }
-
-            // Verde Codigo
-            if (element.classes.contains('string')) {
-              return {'color': '#42b983'};
-            }
-
-            // Codigo entre el texto anaranjado
-            if (element.classes.contains('naranja')) {
-              return {'color': '®', 'font-weight': 'bold'};
-            }
-
-            // comentario en codigo
-            if (element.classes.contains('comment')) {
-              return {'color': '#b3b3b3'};
-            }
-
-            // variable en codigo
             if (element.classes.contains('keyword')) {
-              return {'color': '#e96900'};
+              return {'color': '#C5A5C5'};
+            }
+            if (element.classes.contains('function')) {
+              return {'color': '#79B6F2'};
+            }
+            if (element.classes.contains('tag')) {
+              return {'color': '#FC929E'};
+            }
+            if (element.classes.contains('punctuation')) {
+              return {'color': '#88C6BE'};
+            }
+            if (element.classes.contains('class-name')) {
+              return {'color': '#FAC863'};
+            }
+            if (element.classes.contains('attr-name')) {
+              return {'color': '#C5A5C5'};
+            }
+            if (element.classes.contains('attr-value')) {
+              return {'color': '#8DC891'};
+            }
+            if (element.classes.contains('string')) {
+              return {'color': '#8DC891'};
+            }
+            if (element.classes.contains('language-java')) {
+              return {'color': '#FC929E'};
             }
 
-            // key de codigo de funcion built_in
-            if (element.classes.contains('fkeyword')) {
-              return {'color': '#0092db'};
-            }
 
-            // Codigo console verde
-            if (element.classes.contains('built_in')) {
-              return {'color': '#42b983'};
-            }
 
-            // Code color naranja
             if (element.localName == 'code') {
-              return {'color': '#e96900'};
+              return {'font-weight': '550'};
             }
 
-            if (element.localName == 'pre') {
-              return {'font-weight': '600'};
+            if (element.localName == 'blockquote') {
+              return {'background-color': '#f5f7f9', 'padding': '15px'};
             }
+
+
 
             return null;
           },),

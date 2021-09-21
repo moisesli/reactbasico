@@ -94,7 +94,7 @@ class _CardListState extends State<CardList> {
         ),
       ),
       onTap: () {
-        _showInterstitialAd();
+        // _showInterstitialAd();
         Navigator.push(
             context,
             MaterialPageRoute(
