@@ -60,9 +60,9 @@ class _DetailState extends State<Detail> {
               return {'font-weight': '550'};
             }
 
-            if (element.localName == 'blockquote') {
-              return {'background-color': '#f5f7f9', 'padding': '15px'};
-            }
+            // if (element.localName == 'blockquote') {
+            //   return {'background-color': '#f5f7f9', 'padding': '15px'};
+            // }
 
 
 
