@@ -31,7 +31,7 @@ class _HomeState extends State<Home> {
     final BannerAd banner = BannerAd(
       size: size,
       request: AdRequest(),
-      adUnitId: 'ca-app-pub-3940256099942544/6300978111',
+      adUnitId: 'ca-app-pub-5852042324891789/9183059836',
       listener: BannerAdListener(
         onAdLoaded: (Ad ad) {
           print('$BannerAd loaded.');
